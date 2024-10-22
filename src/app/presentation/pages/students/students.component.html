@@ -1,0 +1,67 @@
+<!-- CONTENT -->
+<section id="content">
+  <!-- NAVBAR -->
+  <nav>
+    <i class="bx bx-menu"></i>
+  </nav>
+  <!-- NAVBAR -->
+
+  <!-- MAIN -->
+  <main>
+    <div class="head-title">
+      <div class="left">
+        <h1>Gestion Students</h1>
+        <ul class="breadcrumb">
+          <li>
+            <a href="#">Students</a>
+          </li>
+          <li><i class="bx bx-chevron-right"></i></li>
+          <li>
+            <a class="active" href="#">List students</a>
+          </li>
+        </ul>
+      </div>
+      <div class="btn">
+        <a [routerLink]="['/admin/form-students']" class="info">+</a>
+      </div>
+    </div>
+    <div class="table-data">
+      <div class="order">
+        <div class="head">
+          <h3>Students</h3>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>MATRICULE</th>
+              <th>NOM</th>
+              <th>PRENOM</th>
+              <th>TELEPHONE</th>
+              <th>TELEPHONE D'UN PARENT</th>
+              <th>DATE DE NAISSANCE</th>
+              <th>ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01</td>
+              <td>11115215D</td>
+              <td>NCHO</td>
+              <td>JUNIOR NCHO</td>
+              <td>0704817000</td>
+              <td>0708827000</td>
+              <td>09/02/2000</td>
+              <td class="btn">
+                <a href="" class="info">Modifier</a>
+                <a href="" class="danger">Supprimer</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <!-- MAIN -->
+</section>
+<!-- CONTENT -->
