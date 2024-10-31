@@ -12,6 +12,7 @@ import { SmtpComponent } from './presentation/pages/smtp/smtp.component';
 import { CarteStudentsComponent } from './presentation/pages/carte-students/carte-students.component';
 import { FormStudentComponent } from './presentation/components/shared/form-student/form-student.component';
 import { LoginComponent } from './presentation/pages/login/login.component';
+import { FormTeacherComponent } from './presentation/components/shared/form-teacher/form-teacher.component';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -27,7 +28,7 @@ export const routes: Routes = [
       { path: 'rapports', component: RapportsComponent },
       { path: 'cartestudents', component: CarteStudentsComponent },
       { path: 'form-students', component: FormStudentComponent },
-
+      {path: 'form-teachers' , component: FormTeacherComponent},
       {
         path: 'settings',
         component: SettingsComponent,

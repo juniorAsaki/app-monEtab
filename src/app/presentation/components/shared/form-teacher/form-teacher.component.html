@@ -1,1 +1,118 @@
-<p>form-teacher works!</p>
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+  <!-- Main Content -->
+  <div id="content">
+    <div class="p-5">
+      <div class="text-center d-flex justify-content-between">
+        <h1 class="h4 text-gray-900 mb-4"></h1>
+        <div>
+          <a class="btn btn-outline-dark">Retour</a>
+        </div>
+      </div>
+      <form class="user" method="post">
+        <div class="form-group row">
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <input
+              type="text"
+              class="form-control form-control-user"
+              id="exampleFirstName"
+              placeholder="Nom"
+            />
+          </div>
+          <div class="col-sm-4">
+            <input
+              type="text"
+              class="form-control form-control-user"
+              id="exampleLastName"
+              placeholder="Prenom"
+            />
+          </div>
+          <div class="col-sm-4">
+            <input
+              type="text"
+              class="form-control form-control-user"
+              id="urlPicture"
+              placeholder="urlPicture"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <input
+              type="text"
+              class="form-control form-control-user"
+              id="exampleInputEmail"
+              placeholder="Telephone"
+            />
+          </div>
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <select name="specialty" id="specialty" class="form-control">
+              <option
+                th:each="enum_matiere : ${matieres}"
+                th:value="${enum_matiere.name()}"
+                th:text="${enum_matiere.name()}"
+              ></option>
+            </select>
+          </div>
+          <div class="form-check form-switch col-sm-4 mb-3 mb-sm-0">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="available"
+            />
+            <label class="form-check-label" for="available">Vacant</label>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-4">
+            <input
+              type="text"
+              class="form-control form-control-user"
+              placeholder="Ville"
+            />
+          </div>
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <input
+              type="text"
+              class="form-control form-control-user"
+              placeholder="pays"
+            />
+          </div>
+          <div class="col-sm-4">
+            <input
+              type="text"
+              class="form-control form-control-user"
+              placeholder="Rue"
+            />
+          </div>
+        </div>
+        <div
+          class="form-group row d-flex justify-content-between align-items-center"
+        >
+          <div
+            class="form-group w-25 d-flex align-items-center justify-content-center"
+          >
+            <label id="gender">Genre</label>
+            <select name="genre" id="gender" class="form-control">
+              <option></option>
+            </select>
+          </div>
+          <div class="col-sm-6">
+            <input
+              type="date"
+              class="form-control form-control-user"
+              id="exampleRepeatPassword"
+            />
+          </div>
+        </div>
+
+        <a class="btn btn-outline-info btn-user"> Annuler </a>
+        <button type="submit" class="btn btn-primary btn-user"></button>
+        <hr />
+      </form>
+    </div>
+  </div>
+  <!-- /.container-fluid -->
+</div>
+<!-- End of Main Content -->
